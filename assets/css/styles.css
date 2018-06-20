@@ -1,0 +1,294 @@
+/* Font Face */
+
+@font-face {
+	font-family: roboto-light;
+	src: url(../fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
+	font-family: roboto-regular;
+	src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+
+/* Global Styles */
+
+
+body {
+	margin: 0;
+	min-width: 960px;
+
+	text-align: center;
+	font-family: roboto-light;
+	color: #fff;
+}
+h1, h2, h3, span, p {
+	margin: 0;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+}
+.align {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+.fullscrn {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	border-bottom: solid 2px #c5c5c5;
+}
+.light {
+	background: #00000078;
+}
+.dark {
+	background: #0000009c;
+}
+
+/* Main Header Styles */
+
+.main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 8vh;
+	z-index: 10;
+
+	background: #000000c7;
+}
+.main-header-logo-container {
+	display: flex;
+	float: left;
+	height: 8vh;
+	width: 20%;	
+	min-width: 300px;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.main-header-logo {
+	height: 6vh;
+}
+.main-header-logo-tittle-container {
+	display: inline-block;
+	width: 12vw;
+	margin-left: 5%;
+}
+.main-header-logo-tittle {
+	display: inline-block;
+	font-size: 1.8rem;
+}
+.logo-orange {
+	color: orange;
+}
+.logo-blue {
+	color: blue;
+}
+.main-header-nav-container {
+	display: flex;
+	float: right;
+	height: 8vh;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	min-width: 620px;
+}
+.main-header-nav {
+	width: 100%;
+	font-size: 1.4rem;
+}
+.main-header-nav a {
+	margin-left: 3%;
+	margin-right: 3%;
+
+	transition: all 200ms ease-in;
+	color: #fff;
+}
+.main-header-nav a:hover {
+	transition: all 200ms ease-in;
+	color: #87c5fb;
+}
+
+
+/* Contact Modal Styles */
+
+.modal-contact {
+	position: fixed;
+	z-index: 20;
+
+	background: #000000d6;
+}
+.modal-contact-form-align {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+.modal-contact-form-container {
+	width: 30%;
+	padding: 2%;
+	box-sizing: border-box;
+	overflow: hidden;
+	min-width: 500px;
+
+	background: #000000c2;
+	border: solid 1px #fff;
+}
+.modal-contact-tittle {}
+.modal-contact-form {
+	width: 100%;
+	height: 85%;
+	margin-top: 4%;
+}
+.modal-contact-element {
+	display: block;
+	width: 80%;
+	height: 35px;
+	margin: auto;
+	margin-bottom: 20px;
+	padding-left: 2%;
+	box-sizing: border-box;
+
+	font-family: roboto-light;
+	background: none;
+	border: solid 1px #fff;
+	color: #fff;
+}
+.modal-contact-element::placeholder {
+	color: #fff;
+}
+.textarea-element {
+	height: 80px;
+}
+.button-element {
+	padding: 0;
+
+	cursor: pointer;
+	transition: all 300ms ease-in;
+}
+.button-element:hover {
+	background: #87c5fb;
+	transition: all 300ms ease-in;
+}
+#closeModalButton {
+	width: 40%;
+}
+
+
+/* Main Page Section Styles */
+
+
+.landing-background {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	z-index: -1;
+}
+#services {
+	background: linear-gradient(#484848, #0c0c0c);
+}
+.service-global-container {
+	margin-bottom: 4%;
+}
+.section-tittle-container {
+	font-size: 2.5rem;
+	margin-top: 8vh;
+}
+.section-tittle {}
+.service-section-content {
+	margin-top: 4%;
+}
+.service-global-container {
+	display: inline-block;
+	width: 22%;
+	overflow: hidden;
+
+	text-align: center;
+}
+.service-container {
+	display: inline-block;
+	height: 25vh;
+	overflow: hidden;
+
+	border: solid 1px #fff;
+}
+.service-container-tittle {
+	margin-bottom: 5%;
+
+	font-size: 1.1rem;
+}
+.service-container-img-container {}
+.service-container-img {
+	width: 100%;
+	height: 25vh;
+
+	transition: all 300ms ease-in;
+	transform: scale(1);
+
+	cursor: pointer;
+}
+.service-container-img:hover {
+	transition: all 300ms ease-in;
+	transform: scale(1.25);
+}
+.centered {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.service-container-space {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+#us {
+	background: url(../media/us-bg.jpg);
+	background-size: 100% 100vh;
+}
+.us-section-content-align {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.justify {
+	height: fit-content;
+}
+.us-section-content {
+	width: 80%;
+	margin: auto;
+	margin-top: 4%;
+
+	text-align: justify;
+}
+.us-section-p {
+	font-size: 1.8rem;
+}
+#mision {
+	background: url(../media/mision.jpg);
+	background-size: 100% 100vh;
+}
+#vision {
+	background: url(../media/vision.jpg);
+	background-size: 100% 100vh;
+}
+
+
+/* Footer Styles */
+
+
+.main-footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30vh;
+
+	background: #060606;
+}

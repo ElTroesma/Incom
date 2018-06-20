@@ -1,12 +1,206 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="shortcut icon" type="image/png" href="assets/media/favicon.png">
 	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-	<title>Incom Uruguay</title>
+	<title>Incom Computación</title>
 </head>
 <body>
+	<header class="main-header">
+		<div class="align">
+			<div class="main-header-logo-container">
+				<img src="assets/media/logo.png" class="main-header-logo">
+				<div class="main-header-logo-tittle-container">
+					<h1 class="main-header-logo-tittle logo-orange">Incom</h1>
+					<h1 class="main-header-logo-tittle logo-blue">Computación</h1>
+				</div>
+			</div>
 
+			<div class="main-header-nav-container">
+				<nav class="main-header-nav">
+					<a onClick="showModal()" style="cursor: pointer;">Contacto</a>
+					<a href="#services">Servicios</a>
+					<a href="#us">Empresa</a>
+					<a href="#mision">Nuestra misión</a>
+					<a href="#vision">Visión</a>
+				</nav>
+			</div>
+
+			<!--  Navigation Mobile -->
+
+			<div class="mobile-header-nav" style="display: none">
+				
+			</div>
+		</div>
+	</header>
+
+	<!--  Hide Modal Section  -->
+
+	<section class="modal-contact fullscrn" id="contact-modal" style="display: none;">
+		<div class="modal-contact-form-align">
+			<div class="modal-contact-form-container">
+				<div class="modal-contact-tittle">
+					<h2>Contacto</h2>
+				</div>
+				<div class="modal-contact-form">
+					<form action="#" method="POST">
+						<input type="text" name="uname" placeholder="Nombre" required="true" class="modal-contact-element">
+						<input type="text" name="mobile" placeholder="Celular" required="true" class="modal-contact-element">
+						<input type="text" name="phone" placeholder="Telefono fijo" required="true" class="modal-contact-element">
+						<input type="email" name="email" placeholder="e-mail" required="true" class="modal-contact-element">
+
+						<textarea placeholder="Mensaje:" class="modal-contact-element textarea-element"></textarea>
+
+						<button type="submit" class="modal-contact-element button-element">Enviar</button>
+						<button type="button" class="modal-contact-element button-element" id="closeModalButton" onClick="hideModal()">Cerrar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--  Main Page Section  -->
+
+	<section class="fullscrn light" id="home">
+		<img src="assets/media/landing-bg.jpg" class="landing-background">
+	</section>
+
+	<section class="fullscrn dark" id="services">
+		<div class="align">
+			<div class="section-tittle-container">
+				<h1 class="section-tittle">Servicios</h1>
+			</div>
+			<div class="service-section-content">
+
+				<!-- Services -->
+
+				<div class="service-global-container">
+					<div class="service-container-tittle"><h2>Seguro por daños</h2></div>
+					<a href="#">
+						<div class="service-container">
+							<div class="service-container-img-container">
+								<img src="assets/media/services/secure.jpg" class="service-container-img">
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="service-global-container centered">
+					<div class="service-container-tittle"><h2>Control parental</h2></div>
+					<div class="service-container">
+						<div class="service-container-img-container">
+							<img src="assets/media/services/parental-control.jpg" class="service-container-img">
+						</div>
+					</div>
+				</div>
+
+				<div class="service-global-container">
+					<div class="service-container-tittle"><h2>Asistencia remota</h2></div>
+					<div class="service-container">
+						<div class="service-container-img-container">
+							<img src="assets/media/services/remote-asistence.jpg" class="service-container-img">
+						</div>
+					</div>
+				</div>
+
+				<div class="service-global-container service-container-space">
+					<div class="service-container-tittle"><h2>Reparación PC</h2></div>
+					<div class="service-container">
+						<div class="service-container-img-container">
+							<img src="assets/media/services/pc-repair.jpg" class="service-container-img">
+						</div>
+					</div>
+				</div>
+
+				<div class="service-global-container service-container-space">
+					<div class="service-container-tittle"><h2>Creación Web</h2></div>
+					<div class="service-container">
+						<div class="service-container-img-container">
+							<img src="assets/media/services/web-creation.jpg" class="service-container-img">
+						</div>
+					</div>
+				</div>
+
+				<!-- End Services -->
+
+			</div>
+		</div>
+	</section>
+
+	<section class="fullscrn" id="us">
+		<div class="fullscrn light">
+
+			<div class="align">
+				<div class="us-section-content-align">
+					<div class="justify">
+						<div class="section-tittle-container">
+							<h1 class="section-tittle">Nuestra empresa</h1>
+						</div>
+						<div class="us-section-content">
+							<p class="us-section-p">Desde hace más de 15 años incorporados en Montevideo estamos para ofrecer nuestros servicios. Además de suministrarle cualquier equipamento, buscamos para usted las mejores soluciones en infraestructura.</p>
+						</div>
+						<div class="us-section-content">
+							<p class="us-section-p">Competimos con la mejor comodidad para usted ajustando a sus necesidades, nuestros clientes son usuarios finales, empresas de todos los sectores y tamaños desde PYMES o profesionales autónomos con necesidades básicas pasando por empresas de cualquier sector con varios ordenadores y servidores.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="fullscrn" id="mision">
+		<div class="fullscrn light">
+
+			<div class="align">
+				<div class="us-section-content-align">
+					<div class="justify">
+						<div class="section-tittle-container">
+							<h1 class="section-tittle">Nuestra misión</h1>
+						</div>
+						<div class="us-section-content">
+							<p class="us-section-p">Satisfacemos las necesidades de nuestros clientes con responsabilidad y entusiasmo porque amamos lo que hacemos.</p>
+						</div>
+						<div class="us-section-content">
+							<p class="us-section-p">Nuestro leal compromiso es perfeccionar su equipamiento para su máxima dinámica y continuidad en su trayecto de trabajo de forma óptima, rápida y eficaz.</p>
+						</div>
+						<div class="us-section-content">
+							<p class="us-section-p">Luchamos contra la obsolencia programada por las grandes industrias para superar las expectativas de los fabricantes manteniendo su equipamiento en perfecto estado.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="fullscrn" id="vision">
+		<div class="fullscrn light">
+
+			<div class="align">
+				<div class="us-section-content-align">
+					<div class="justify">
+						<div class="section-tittle-container">
+							<h1 class="section-tittle">Nuestra visión</h1>
+						</div>
+						<div class="us-section-content">
+							<p class="us-section-p">Nuestra visión se enfoca en proyectarnos de la mano de nuestros clientes, estableciendo de esta manera un vínculo humano, racional y profesional y así forjar un ambiente de trabajo motivador e inspirador.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="main-footer"></footer>
+
+	<script type="text/javascript" src="assets/js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/modal.js"></script>
 </body>
 </html>
