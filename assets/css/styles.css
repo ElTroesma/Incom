@@ -37,7 +37,7 @@ a {
 	min-height: 100vh;
 	overflow: hidden;
 	box-sizing: border-box;
-
+	background-attachment: fixed;
 	border-bottom: solid 1px #c5c5c5;
 }
 .light {
@@ -186,7 +186,7 @@ a {
 
 
 #pre_home {
-	background: url(../media/landing-bg.jpg);
+	background-image: url(../media/landing-bg.jpg);
 	background-size: 100% 100vh;
 }
 .first-tittle {
@@ -243,7 +243,7 @@ a {
 	z-index: -1;
 }
 #pre_services {
-	background: linear-gradient(#252525, #000000);
+	background-image: linear-gradient(#252525, #000000);
 }
 .service-global-container {
 	margin-bottom: 4%;
@@ -303,7 +303,7 @@ a {
 	margin-left: 5%;
 }
 #pre_us {
-	background: url(../media/us-bg.jpg);
+	background-image: url(../media/us-bg.jpg);
 	background-size: 100% 100vh;
 }
 .us-section-content-align {
@@ -326,11 +326,11 @@ a {
 	font-size: 2.2rem;
 }
 #pre_mision {
-	background: url(../media/mision.jpg);
+	background-image: url(../media/mision.jpg);
 	background-size: 100% 100vh;
 }
 #pre_vision {
-	background: url(../media/vision.jpg);
+	background-image: url(../media/vision.jpg);
 	background-size: 100% 100vh;
 }
 
