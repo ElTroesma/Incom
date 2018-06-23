@@ -56,65 +56,63 @@ a {
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 8vh;
+	height: 80px;
 	z-index: 10;
 
 	background: #000000c7;
 }
-.main-header-logo-container {
-	display: flex;
+
+/* Header */
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	z-index: 10;
+	background: #000000c7;
+}
+
+.logo {
+	display: block;
 	float: left;
-	height: 8vh;
-	min-width: 300px;
-	align-items: center;
 }
 .main-header-logo {
-	margin-right: 4%;
-	height: 6vh;
-}
-.main-header-logo-tittle-container {
-	display: flex;
+	float: left;
 	height: 40px;
+	padding: 20px 0;
 }
-.main-header-logo-tittle {
-	display: inline-block;
-	font-size: 1.8rem;
-}
-.logo-orange {
-	color: orange;
-}
-.logo-blue {
-	margin-left: .3%;
 
-	color: blue;
-}
-.main-header-nav-container {
-	display: flex;
-	float: right;
-	height: 8vh;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	min-width: 600px;
-}
 .main-header-nav {
-	display: inline-flex;
-	width: 100%;
-	font-size: 1.4rem;
+	float: right;
+	height: 80px;
 }
-.main-header-nav a {
-	margin-left: 3%;
-	margin-right: 3%;
-
-	transition: all 200ms ease-in;
+.main-header-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.main-header-nav ul li {
+	float: left;
+}
+.main-header-nav ul li a {
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	margin: 10px 0;
+	padding: 0 10px;
 	color: #fff;
 }
-.main-header-nav a:hover {
+.main-header-nav ul li a:hover {
 	transition: all 200ms ease-in;
 	color: #87c5fb;
 }
-
-
+.main-header-burger-menu {
+  float: right;
+  height: 60px;
+  line-height: 68px;
+  margin: 10px 0;
+}
 /* Contact Modal Styles */
 
 .modal-contact {
