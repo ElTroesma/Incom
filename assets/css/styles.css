@@ -63,6 +63,7 @@ a {
 }
 
 /* Header */
+
 header {
 	position: fixed;
 	top: 0;
@@ -112,12 +113,49 @@ header {
   height: 60px;
   line-height: 68px;
   margin: 10px 0;
+  cursor: pointer;
 }
+
+/* Menu Mobile Styles  */
+
+.menuModal {
+    position: fixed;
+    display: none;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    z-index: 30;
+
+	background: #000000eb;
+	border-left: solid 1px #fff;
+}
+.main-header-nav-mobile ul li {
+	border-bottom: solid 1px #fff;
+}
+.main-header-nav-mobile ul {
+	list-style-type: none;
+	padding: 0;
+}
+.main-header-nav-mobile li {
+	line-height: 10vh;
+	text-align: left;
+}
+.main-header-nav-mobile li a{
+	color: #fff;
+}
+.mobile-menu {
+	margin-bottom: 30px;
+}
+
 /* Contact Modal Styles */
 
 .modal-contact {
 	position: fixed;
-	z-index: 20;
+	z-index: 40;
 
 	background: #000000d6;
 }
@@ -153,7 +191,7 @@ header {
 	box-sizing: border-box;
 
 	font-family: roboto-light;
-	font-size: 1.2rem;
+	font-size: 16px;
 
 	background: none;
 	border: solid 1px #fff;
@@ -188,9 +226,11 @@ header {
 	background-size: 100% 100vh;
 }
 .first-tittle {
-	font-size: 6rem;
+	font-size: 4rem;
 }
-.second-tittle {}
+.second-tittle {
+	font-size: 4rem;
+}
 .last-tittle {
 	font-size: 3.3rem;
 }
@@ -217,6 +257,7 @@ header {
 }
 .landing-contact-icons {
 	margin-top: 4%;
+	margin-bottom: 50px;
 }
 .landing-contact-icons .fa {
 	margin-right: 2%;
@@ -247,7 +288,7 @@ header {
 	margin-bottom: 4%;
 }
 .section-tittle-container {
-	font-size: 2.8rem;
+	margin-top: 50px;
 }
 .section-tittle {}
 .service-section-content {
@@ -276,7 +317,9 @@ header {
 	font-size: 1.1rem;
 }
 .service-tittle {
-	margin-top: 4%;
+	margin-top: 85px;
+
+	font-size: 4rem;
 }
 .service-container-img-container {}
 .service-container-img {
@@ -300,6 +343,9 @@ header {
 	margin-right: 5%;
 	margin-left: 5%;
 }
+#final-service {
+	margin-bottom: 40px;
+}
 #pre_us {
 	background-image: url(../media/us-bg.jpg);
 	background-size: 100% 100vh;
@@ -309,6 +355,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	margin-top: 50px;
 }
 .justify {
 	height: fit-content;
@@ -319,9 +366,6 @@ header {
 	margin-top: 4%;
 
 	text-align: justify;
-}
-.us-section-p {
-	font-size: 2.2rem;
 }
 #pre_mision {
 	background-image: url(../media/mision.jpg);
@@ -349,9 +393,11 @@ header {
 	margin-top: 2%;
 	margin-bottom: 1%;
 }
+.footer-logo {
+	display: inline-block;
+}
 .social-networks-container {
 	margin-top: 1%;
-	margin-bottom: 4%;
 }
 .social-networks-container .fa {
 	margin-left: .5%;
@@ -389,7 +435,7 @@ a.fa.scroll-up {
     bottom: 50px;
     right: 50px;
     box-sizing: border-box;
-    z-index: 100;
+    z-index: 20;
     
     font-size: 24px !important;
     line-height: 37px !important;
