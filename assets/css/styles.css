@@ -218,6 +218,30 @@ header {
 }
 
 
+/* Landings bg */
+
+#pre_home_secure {
+	background-image: url(../media/landings/secure-landing.jpg);
+	background-size: 100% 100vh;
+}
+#pre_home_parental {
+	background-image: url(../media/landings/parental-control-landing.jpg);
+	background-size: 100% 100vh;
+}
+#pre_home_remote {
+	background-image: url(../media/landings/remote-asistence-landing.jpg);
+	background-size: 100% 100vh;
+}
+#pre_home_repair {
+	background-image: url(../media/landings/pc-repair-landing.jpg);
+	background-size: 100% 100vh;
+}
+#pre_home_web {
+	background-image: url(../media/landings/web-creation-landing.jpg);
+	background-size: 100% 100vh;
+}
+
+
 /* Main Page Section Styles */
 
 
