@@ -170,7 +170,7 @@ header {
 	padding: 2%;
 	box-sizing: border-box;
 	overflow: hidden;
-	min-width: 500px;
+	min-width: 300px;
 
 	background: #000000c2;
 	border: solid 1px #fff;
@@ -289,12 +289,13 @@ header {
 
 	font-size: 3rem;
 
-	color: #fff;
+	color: #f44601;
 	transition: all 200ms ease-in;
 }
 .landing-contact-icons .fa:hover {
     color: #87c5fb;
 	transition: all 200ms ease-in;
+	transform: scale(1.2);
 }
 .landing-background {
 	position: relative;
@@ -320,7 +321,6 @@ header {
 }
 .service-global-container {
 	display: inline-block;
-	width: 350px;
 
 	text-align: center;
 }
@@ -340,11 +340,6 @@ header {
 
 	font-size: 1.1rem;
 }
-.service-tittle {
-	margin-top: 85px;
-
-	font-size: 4rem;
-}
 .service-container-img-container {}
 .service-container-img {
 	width: 100%;
@@ -358,10 +353,6 @@ header {
 .service-container-img:hover {
 	transition: all 300ms ease-in;
 	transform: scale(1.25);
-}
-.centered {
-	margin-left: 10%;
-	margin-right: 10%;
 }
 .service-container-space {
 	margin-right: 5%;
@@ -413,10 +404,6 @@ header {
 
 	background: #131313;
 }
-.main-footer-logo-tittle-container {
-	margin-top: 2%;
-	margin-bottom: 1%;
-}
 .footer-logo {
 	display: inline-block;
 }
@@ -439,7 +426,7 @@ header {
 .footer-copyright-container {
 	position: absolute;
 	width: 100%;
-	height: 4vh;
+	height: auto;
 	bottom: 0;
 	padding: .5%;
 	box-sizing: border-box;
