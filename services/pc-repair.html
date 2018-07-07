@@ -11,10 +11,10 @@
 	<title>INCOM Computación</title>
 </head>
 <body>
-	
+
 	<header>
 		<div class="main-header-container align">
-			
+
 			<a href="../index.html" class="logo">
 				<img src="../assets/media/logo.png" class="main-header-logo">
 			</a>
@@ -43,7 +43,7 @@
 
 		</div>
 	</header>
-		
+
 	<!-- Modal Menu -->
 
 	<section class="menuModal" id="menu-modal">
@@ -80,13 +80,13 @@
 					<h2>Contacto</h2>
 				</div>
 				<div class="modal-contact-form">
-					<form action="#" method="POST">
-						<input type="text" name="uname" placeholder="Nombre" required="true" class="modal-contact-element">
+					<form action="../datos.php" method="POST">
+						<input type="text" name="name" placeholder="Nombre" required="true" class="modal-contact-element">
 						<input type="text" name="mobile" placeholder="Celular" required="true" class="modal-contact-element">
 						<input type="text" name="phone" placeholder="Telefono fijo" required="true" class="modal-contact-element">
 						<input type="email" name="email" placeholder="e-mail" required="true" class="modal-contact-element">
 
-						<textarea placeholder="Mensaje:" class="modal-contact-element textarea-element"></textarea>
+						<textarea placeholder="Mensaje:" name="mensaje" required="true" class="modal-contact-element textarea-element"></textarea>
 
 						<button type="submit" class="modal-contact-element button-element">Enviar</button>
 						<button type="button" class="modal-contact-element button-element" id="closeModalButton" onClick="hideModal()">Cerrar</button>
@@ -120,7 +120,7 @@
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</section>
 
 	<section class="fullscrn dark" id="pre_services">
