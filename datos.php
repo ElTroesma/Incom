@@ -22,14 +22,13 @@
 	$celular = $_POST['mobile'];
 	$telefono = $_POST['phone'];
 	$email = $_POST['email'];
-	$tel = $_POST['tel'];
 	$mensaje = nl2br($_POST['mensaje']);
 
 		echo '<br><div class="mensaje container alert alert-success ">Mensaje Enviado Con Exito.<a href="index.html">Pulse aquí</a> para volver.</div>';
 		$mail->From = $email;
 		$mail->addAddress($to);
 		$mail->isHtml(true);
-		$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$tel.'<br><br><strong>Nos a enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
+		$mail->Body = '<strong>Nombre:</strong>  '.$nombre.'<br><br><strong>Celular:</strong>  '.$celular.'<br><br><strong>Correo de contacto:</strong>  '.$email.'<br><br><strong>Teléfono:</strong>  '.$telefono.'<br><br><strong>Nos a enviado el siguiente mensaje:<br><br></strong><p>'.$mensaje.'</p>';
 		$mail->CharSet = 'UTF-8';
 		$mail->send();
 
