@@ -47,28 +47,30 @@
 
 		<!-- Modal Menu -->
 
-	<section class="menuModal" id="menu-modal">
-		<nav class="main-header-nav-mobile mobile-menu">
-				<ul>
-					<li>
-						<a onClick="showModal()" style="cursor: pointer;">Contacto</a>
-					</li>
-					<li>
-						<a onClick="hideMenu()" href="#services">Servicios</a>
-					</li>
-					<li>
-						<a onClick="hideMenu()" href="#us">Empresa</a>
-					</li>
-					<li>
-						<a onClick="hideMenu()" href="#mision">Nuestra misión</a>
-					</li>
-					<li>
-						<a onClick="hideMenu()" href="#vision">Visión</a>
-					</li>
-				</ul>
-			</nav>
-			<button type="button" class="modal-contact-element button-element" id="closeModalButton" onClick="hideMenu()">Cerrar</button>
-	</section>
+		<section class="menuModal-section" id="menu-modal" onClick="hideMenu()">
+			<div class="menuModal">
+				<nav class="main-header-nav-mobile mobile-menu">
+					<ul>
+						<li>
+							<a onClick="showModal()" style="cursor: pointer;">Contacto</a>
+						</li>
+						<li>
+							<a onClick="hideMenu()" href="#services">Servicios</a>
+						</li>
+						<li>
+							<a onClick="hideMenu()" href="#us">Empresa</a>
+						</li>
+						<li>
+							<a onClick="hideMenu()" href="#mision">Nuestra misión</a>
+						</li>
+						<li>
+							<a onClick="hideMenu()" href="#vision">Visión</a>
+						</li>
+					</ul>
+				</nav>
+				<button type="button" class="modal-contact-element button-element" id="closeModalButton" onClick="hideMenu()">Cerrar</button>
+			</div>
+		</section>
 
 
 

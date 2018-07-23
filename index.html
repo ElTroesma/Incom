@@ -47,8 +47,9 @@
 
 	<!-- Modal Menu -->
 
-	<section class="menuModal" id="menu-modal">
-		<nav class="main-header-nav-mobile mobile-menu">
+	<section class="menuModal-section" id="menu-modal" onClick="hideMenu()">
+		<div class="menuModal">
+			<nav class="main-header-nav-mobile mobile-menu">
 				<ul>
 					<li>
 						<a onClick="showModal()" style="cursor: pointer;">Contacto</a>
@@ -68,6 +69,7 @@
 				</ul>
 			</nav>
 			<button type="button" class="modal-contact-element button-element" id="closeModalButton" onClick="hideMenu()">Cerrar</button>
+		</div>
 	</section>
 
 	<!--  Hide Modal Section  -->
